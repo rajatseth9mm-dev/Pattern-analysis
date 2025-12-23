@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>WAVE</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<div id="top">
+  <select id="tf">
+    <option>1m</option><option>5m</option><option>15m</option>
+    <option>30m</option><option>1h</option><option>4h</option><option>1d</option>
+  </select>
+  <button id="add">Add Lines</button>
+  <button id="clear">Clear</button>
+</div>
+
+<canvas id="chart"></canvas>
+
+<div id="bottom">
+  <input id="sim" type="range" min="50" max="100" value="80">
+  <span id="simv">80%</span>
+  <button id="apply">Apply</button>
+</div>
+
+<script src="chart-engine.js"></script>
+<script src="ui.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
