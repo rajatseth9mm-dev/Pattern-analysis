@@ -1,1 +1,33 @@
+body {
+  margin: 0;
+  background: #0e0e0e;
+  color: #fff;
+  overflow: hidden;
+}
 
+#top, #bottom {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  gap: 6px;
+  padding: 6px;
+  background: #181818;
+  z-index: 10;
+}
+
+#top { top: 0; }
+#bottom { bottom: 0; }
+
+button, select {
+  background: #2a2a2a;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+}
+
+#chart {
+  position: absolute;
+  top: 40px;
+  bottom: 40px;
+  width: 100%;
+}
