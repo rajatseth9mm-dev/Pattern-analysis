@@ -1,12 +1,12 @@
-WAVE – Local Pattern Similarity App
+WAVE – Local Pattern Similarity App (Termux)
 
-Run on Android (Termux):
+CSV location (IMPORTANT):
+~/WebappCSVfile/*.csv
 
-1. pkg install nodejs
-2. cd WAVE/backend
-3. npm install
-4. npm start
-5. Open browser: http://localhost:5000
+Run:
+cd WAVE/backend
+npm install
+npm start
 
-CSV location:
- /storage/WebappCSVfile/*.csv
+Open:
+http://localhost:5000
