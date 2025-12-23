@@ -14,10 +14,12 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// serve frontend (avoids file:// issues)
+// serve frontend
 app.use("/", express.static(path.join(__dirname, "../frontend")));
 
-const CSV_DIR = "/storage/WebappCSVfile";
+// ✅ CORRECT TERMUX-HOME CSV PATH
+const CSV_DIR = `${process.env.HOME}/WebappCSVfile`;
+
 let rawData = [];
 
 (async () => {
