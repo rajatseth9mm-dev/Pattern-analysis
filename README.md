@@ -1,4 +1,3 @@
-# Pattern-analysis
 WAVE – Local Pattern Similarity App
 
 Run on Android (Termux):
